@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML- Layout</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			*{
+				box-sizing: border-box;
+			}
+			body{
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			/*style the header*/
+			header{
+				background-color: #666;
+				padding: 30px;
+				text-align: center;
+				font-size: 35px;
+				color:  white;
+			}
+			/* create two columns/boxes that floats next to each other*/
+			nav{
+				float:  left;
+				width: 30%;
+
+				background: #ccc;
+				padding: 20px;
+			}
+			/* style the list inside the menu*/
+			nav ul{
+				list-style-type: none;
+				padding: 0;
+			}
+			article {
+				float: left;
+				padding: 20px;
+				width: 70%;
+				background-color: #f1f1f1;
+			}
+			/*clear floats after columns*/
+			section::after{
+				background: #ccc;
+				content: "";
+				display: table;
+				clear: both;
+			}
+			/*style the footer*/
+			footer {
+				background-color: #777;
+				padding: 10px;
+				text-align: center;
+				color:  white;
+			}
+			/*responsive layout- makes the two columns/boxes stack on top pf each other instead of next to each other, on small screens*/
+			nav, article{
+				width:  100%;
+				height:  auto;
+				}
+			}
+
+		</style>
+
+
+
+	</head>
+	<body>
+
+		<header>
+			<h2> Fale Conosco</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+					<li><a href="05-layout.html">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo</p>
+
+				<form>
+					<div>
+						<label for="nome">Nome</label><br>
+						<input type="text" name="name" id="name">
+					</div>
+
+					<div>
+
+						<label for="email">E-mail</label><br>
+						<input type="email" name="email" id="email">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label><br>
+						<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+					</div>
+
+					<div>
+						<p>
+							<label>Qual linguagem você prefere?</label><br>
+							<input type="radio" name="linguagens" value="html">HTML<br>
+							<input type="radio" name="linguagens" value="css">CSS<br>
+							<input type="radio" name="linguagens" value="javascript">JavaScript<br>
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>Quais linguagens você sabe?</label><br>
+							<input type="checkbox" name="linguagens" value="html">HTML<br>
+							<input type="checkbox" name="linguagens" value="css">CSS<br>
+							<input type="checkbox" name="linguagens" value="javascript">JavaScript<br>
+						</p>
+					</div>
+
+					<div>
+						<label>Qual a sua cor favorita?</label>
+						<select>
+							<option>Azul</option>
+							<option>Verde</option>
+							<option>Vermelho</option>
+						</select>
+					</div>
+
+					<div>
+						<input type="submit">
+					</div>
+
+				</form>
+
+	     	</article>
+
+		</section>
+
+			<footer> Desenvolvido por A.C.S.A
+	</body>
+</html>

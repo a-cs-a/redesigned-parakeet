@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML- Layout</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			*{
+				box-sizing: border-box;
+			}
+			body{
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			/*style the header*/
+			header{
+				background-color: #666;
+				padding: 30px;
+				text-align: center;
+				font-size: 35px;
+				color:  white;
+			}
+			/* create two columns/boxes that floats next to each other*/
+			nav{
+				float:  left;
+				width: 30%;
+
+				background: #ccc;
+				padding: 20px;
+			}
+			/* style the list inside the menu*/
+			nav ul{
+				list-style-type: none;
+				padding: 0;
+			}
+			article {
+				float: left;
+				padding: 20px;
+				width: 70%;
+				background-color: #f1f1f1;
+			}
+			/*clear floats after columns*/
+			section::after{
+				background: #ccc;
+				content: "";
+				display: table;
+				clear: both;
+			}
+			/*style the footer*/
+			footer {
+				background-color: #777;
+				padding: 10px;
+				text-align: center;
+				color:  white;
+			}
+			/*Responsive layout -makes the two columns/boxes stack on top of each other instead of next to eache other, on small screens*/
+			@media (max-width: 600px){
+				nav, article{
+					width: 100%;
+					height: auto;
+				}
+			}
+		</style>
+
+
+
+
+
+	</head>
+	<body>
+
+		<header>
+			<h2> Título da páginas</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./06-formulários.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Título Artigo</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut lobortis massa, at rhoncus justo. Mauris dictum viverra nisl, at laoreet arcu facilisis ut. Etiam id eros dui. Aliquam velit dui, feugiat in odio eu, scelerisque sodales neque. Nunc sollicitudin odio quis velit facilisis tincidunt. Duis at tortor sit amet tellus mattis molestie. Sed egestas eros id est semper volutpat. Proin et ante sed dolor mattis pellentesque quis vel purus. Cras ut urna vel nisi dignissim dapibus nec sed ligula. Pellentesque tempor arcu velit, id mollis turpis congue id. Sed sit amet massa tellus. Vivamus porttitor nulla vel ex ultricies, ornare suscipit mauris egestas.</p>
+
+<p>Morbi in faucibus lectus, eget porta mauris. Curabitur imperdiet molestie neque nec gravida. Ut gravida, purus in vehicula placerat, velit tellus ornare ligula, quis posuere dolor nulla ut eros. Proin ac gravida magna. Donec nec imperdiet mi, id semper diam. Donec luctus vitae dui quis ornare. Nam id ligula id lectus dictum bibendum. Aliquam sed vestibulum turpis.</p>
+
+	     	</article>
+
+		</section>
+
+			<footer> Desenvolvido por A.C.S.A
+	</body>
+</html>

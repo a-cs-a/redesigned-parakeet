@@ -1,0 +1,108 @@
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:50px;
+}
+ul{
+  list-style:none;
+}
+
+a{
+  text-decoration:none;
+  color:White;
+}
+
+.nav{
+  display:flex;
+  justify-content:flex-end;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#c18d89;
+  box-shadow: 0 2px 0 rgba (0, 0, 0, 0.4);
+  z-index:-1;
+}
+
+.nav-link{
+  display:flex;
+  margin-right: 2rem;
+  padding:14px 16px;
+}
+
+
+.nav-link a{
+  display:block;
+  font-size: 0.8rem;
+  padding:0.8rem;
+}
+
+.nav-link a:hover{
+  background:#add4c6;
+  opacity:0.7;
+}
+
+#navbar{
+  font-family: Arial, Helvetica, san-serif;
+}
+ 
+
+#welcome{
+  font-size: 1.0em;  
+}
+
+body{
+  margin-top:80px;
+  font-family:Arial;
+  padding:30px;
+  background-color
+  align-items:center;
+}
+
+.table{
+  font-family: Arial. Heveltica, sans-serif;
+  border-style:inset;
+  border-color:#cec5dc;
+}
+
+.column{
+  background-color:#7b82b4;
+  color:white;
+}
+
+td{
+  padding:15px;
+  background-color:#d9e2f4;
+}
+th{
+  padding:15px;
+  background-color:#afa8c1;
+}
+
+#Lt{
+  align-items:center;
+  justify-content: center;
+  margin: auto;
+}
+
+#Heartstopper{
+  align-items:center;
+  justify-content: center;
+  margin:auto;
+}
+
+#Marvel{
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+footer{
+  padding:15px;
+  border:inset;
+  font-style:italic;
+  margin: auto;
+  text-align:center;
+}

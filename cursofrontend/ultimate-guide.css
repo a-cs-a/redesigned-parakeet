@@ -1,0 +1,137 @@
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:50px;
+  z-index: 1;
+}
+ul{
+  list-style:none;
+}
+ul li{
+  font-size:1.5em;
+  height:2.5em;
+}
+a{
+  text-decoration:none;
+  color:white;
+}
+.nav{
+  display:flex;
+  justify-content:space-evenly;
+  align-items:baseline;
+  top:0;
+  left:0;
+  width:100%;
+  background:#409ddc;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4); 
+  margin-right:2rem;
+}
+
+.nav a{
+  display:block;
+  font-size:1.4rem;
+  padding:0.8rem;
+}
+
+.nav a:hover{
+ background:#0a4795;
+ opacity:1.0;
+}
+body{
+  margin-top:80px;
+  padding:30px;
+  align-items: left;
+  background:  url(../imagens/twitter-loho.png);
+  }
+#stan_twitter{
+  margin-top:80px;
+  margin-bottom:80px;
+  padding:15px 5px 15px 5px;
+  border-style:inset;
+  border-color: white;
+  background-color: #0481bf;
+  opacity: 0.9;
+  color: white;
+}
+#Fandoms{
+  margin-top:80px;
+  margin-bottom:80px;
+  padding:15px 5px 15px 5px;
+  border-style:inset;
+  border-color: white;
+  background-color: #0481bf;
+  opacity: 0.9;
+  color: white;
+}
+#stans_and_support{
+  margin-top:80px;
+  margin-bottom:80px;
+  padding:15px 5px 15px 5px;
+  border-style:inset;
+  border-color: white;
+  background-color: #0481bf;
+  opacity: 0.9;
+  color: white;
+}
+#Squads{
+  margin-top:80px;
+  margin-bottom:80px;
+  padding:15px 5px 15px; 5px;
+  border-style:inset;
+  border-color: white;
+  background-color: #0481bf;
+  opacity: 0.9;
+  color: white;
+}
+#Surviving{
+  margin-top:80px;
+  margin-bottom:80px;
+  padding:15px 5px 15px; 5px;
+  border-style:inset;
+  border-color: white;
+  background-color: #0481bf;
+  opacity: 0.9;
+  color: white;
+}
+footer{
+  padding:15px;
+  border-style:inset;
+  font-style:sans-serif;
+  margin:auto;
+  text-align:center;
+  border-color: white;
+  background-color: #0481bf;
+  opacity: 0.9;
+  color:  white;
+}
+
+/*Tablet*/
+@media (max-width:768px) {
+body{
+    font-size: 1.3em;
+    background: url(../imagens/twitter-logo.png);
+}
+}
+
+footer{
+    background-color:#0481bf
+    width:100%;
+    padding:10px;
+}
+}
+
+/*Smartphone*/
+@media (max-width:425px){
+    body{
+        font-size: 1.3em;
+        background: url(../imagens/twitter-logo.png);
+    }
+    
+    footer{
+        background-color:#0481bf;
+        width:100%;
+        padding:10px;
+    } 
+}
